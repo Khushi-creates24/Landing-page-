@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paw-Help</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="images/left-image.jpg" alt="Full Screen Image" class="full-screen-image">
+        </div>
+        <div class="right-section">
+            <div class="title">PAW-HELP</div>
+            <div class="signup-box">
+                <input type="email" id="email" placeholder="Enter your email address here">
+                <button onclick="submitEmail()">Enter</button>
+            </div>
+            <div id="submitted-message">Email submitted successfully!</div>
+            <div class="info-section">
+                <div class="info-box">
+                    <img src="images/feed-your-pet.jpg" alt="Feed Your Pet">
+                    <button>Feed Your Pet</button>
+                </div>
+                <div class="info-box">
+                    <img src="images/adopt-a-pet.jpg" alt="Adopt a Pet">
+                    <button>Adopt a Pet</button>
+                </div>
+                <div class="info-box">
+                    <img src="images/doctors-help.jpg" alt="Doctor's Help">
+                    <button>Doctor Help</button>
+                </div>
+            </div>
+            <div class="contact-section">
+                <h2>Contact in Need</h2>
+                <ul>
+                    <li>Blue Cross of India: +91-44-22354959 / +91-44-22300666</li>
+                    <li>People For Animals (PFA): +91-9810034823 (Delhi) / +91-9818819292 (Bangalore)</li>
+                    <li>Friendicoes SECA: +91-11-24320707 / +91-9810131921 (Delhi)</li>
+                    <li>SPCA India: +91-22-24137518 (Mumbai)</li>
+                    <li>Humane Society International India: +91-22-29241717 / +91-22-29241718</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        function submitEmail() {
+            document.querySelector('.signup-box').style.display = 'none';
+            document.getElementById('submitted-message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
